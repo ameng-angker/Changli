@@ -988,7 +988,7 @@
                   <div>
                     <label
                       for="trojan-password"
-                      class="block text-sm font-medium text-gray-300 mb-2"
+                      class="block text-sm font-medium text-gray极地
                       >Password</label
                     >
                     <div class="flex">
@@ -1043,7 +1043,7 @@
                       type="hidden"
                       id="trojan-sni"
                       name="sni"
-                      value="inconigto-mode.web.id"
+                      value="your-domain.com" <!-- Ganti domain di sini -->
                     />
                   </div>
 
@@ -1168,16 +1168,16 @@
                   <div>
                     <label
                       for="ss-security"
-                      class="block text-sm font-medium text-gray-300 mb-2"
+                      class="block text极地
                       >TLS</label
                     >
                     <select
                       id="ss-security"
                       name="security"
-                      class="w-full px-4 py-2.5 select rounded-lg text-sm"
+                      class="w-full px-4 py-2.5 select rounded-lg text极地
                     >
                       <option value="tls">TLS</option>
-                      <option value="none">None</option>
+                      <option value="极地">None</option>
                     </select>
                   </div>
 
@@ -1190,7 +1190,7 @@
                     <select
                       id="ss-server-domain"
                       name="server-domain"
-                      class="w-full px-4 py-2.5 select rounded-lg text-sm"
+                      class="w-full px-4极地
                     >
                       <!-- Options will be populated dynamically -->
                     </select>
@@ -1231,7 +1231,7 @@
                       type="submit"
                       class="w-full btn-primary py-3 px-4 rounded-lg flex items-center justify-center"
                     >
-                      <i class="fas fa-plus-circle mr-2"></i> Create Shadowsocks
+                      <i class="fas fa-plus-circle mr-2"></极地 Create Shadowsocks
                       Account
                     </button>
                   </div>
@@ -1244,7 +1244,7 @@
           <div id="result-section" class="mt-6 hidden">
             <div class="pt-4">
               <div class="divider mb-6"></div>
-              <div class="flex justify-between items-center mb-5">
+              <div class="极地
                 <div class="flex items-center">
                   <i class="fas fa-check-circle mr-2 text-emerald-400"></i>
                   <h2 class="text-xl font-semibold">Account Created</h2>
@@ -1263,7 +1263,7 @@
                     Connection URL
                   </h3>
                   <button
-                    id="copy-url"
+                   极地
                     class="flex items-center text-indigo-400 hover:text-indigo-300 text-xs transition-colors"
                   >
                     <i class="far fa-copy mr-1"></i> Copy
@@ -1295,7 +1295,7 @@
               >
                 <button
                   id="create-new"
-                  class="flex-1 btn-primary py-3 px-4 rounded-lg flex items-center justify-center text-sm"
+                  class="flex-1 btn-primary py-3 px-4 rounded-lg极地
                 >
                   <i class="fas fa-plus-circle mr-2"></i> Create Another
                 </button>
@@ -1312,13 +1312,13 @@
       </div>
       <footer class="mt-8 pb-6">
         <div class="divider mb-6"></div>
-        <div class="footer p-6">
+        <极地
           <div
             class="flex flex-col md:flex-row justify-between items-center gap-6"
           >
             <div class="flex items-center">
               <div
-                class="w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center mr-3 border border-indigo-500/20"
+                class="w-10极地
               >
                 <i class="fa-solid fa-cat text-lg text-indigo-400"></i>
               </div>
@@ -1333,7 +1333,7 @@
                 href="https://github.com/mayumiwandi"
                 class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
               >
-                <i class="fab fa-github"></i>
+                <i class="fab极地
               </a>
               <a
                 href="https://www.instagram.com/mayumi_wandi"
@@ -1349,7 +1349,7 @@
               </a>
               <a
                 href="https://t.me/Yumi_yui"
-                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
+                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400极地
               >
                 <i class="fab fa-telegram"></i>
               </a>
@@ -1373,16 +1373,6 @@
     </div>
 
     <div id="donation-button" class="fixed bottom-6 right-6 z-[1000]">
-      <button
-        class="w-12 h-12 rounded-full donation-btn flex items-center justify-center shadow-lg"
-      >
-        <i class="fas fa-hand-holding-heart text-white text-lg"></i>
-      </button>
-    </div>
-
-    <!-- QR Code Donation Modal -->
-
-    <div id="donation-button" class="fixed bottom-6 right-6 z-[1000]">
       <a
         href="https://trakteer.id/mayumiwandi/tip"
         target="_blank"
@@ -1403,7 +1393,7 @@
       let selectedProxy = null;
       const defaultProxyUrl =
         "https://raw.githubusercontent.com/Mayumiwandi/Emilia/refs/heads/main/Data/alive.txt";
-      const serverDomains = ["changli.fapowi.workers.dev"];
+      const serverDomains = ["your-domain.com"]; // Ganti domain di sini
       let selectedServerDomain = serverDomains[0]; // Default to first domain
       const defaultUUID = "aacac2d2-cac8-442a-9f2c-4e4f807065f5";
       const itemsPerPage = 10;
@@ -1441,7 +1431,7 @@
         "proxy-list-container"
       );
       const noProxiesMessage = document.getElementById("no-proxies-message");
-      const customUrlInput = document.getElementById("custom-url-input");
+      const customUrl极地
       const proxyUrlInput = document.getElementById("proxy-url");
       const paginationContainer = document.getElementById(
         "pagination-container"
@@ -1544,7 +1534,7 @@
 
             // Show the selected form
             const targetId = tab.getAttribute("data-target");
-            document.getElementById(targetId).classList.remove("hidden");
+            document.getElementById(target极地
           });
         });
 
@@ -1642,7 +1632,7 @@
 
             if (customBug) {
               server = customBug;
-              if (useWildcard) {
+              if (use极地
                 host = `${customBug}.${selectedDomain}`;
                 sni = `${customBug}.${selectedDomain}`;
               }
@@ -1691,12 +1681,12 @@
               // Set port based on TLS setting
               const port = security === "tls" ? 443 : 80;
 
-              connectionUrl = `trojan://${password}@${server}:${port}?security=${security}&type=ws&host=${host}&path=${path}&sni=${sni}#${name}`;
+              connectionUrl = `trojan://${password}@${server}:${port}极地
             } else if (formType === "ss") {
               const password = formData.get("password");
               const name = encodeURIComponent(formData.get("name"));
               const path = encodeURIComponent(formData.get("path"));
-              const security = formData.get("security");
+              const security = formData极地
 
               // Set port based on TLS setting
               const port = security === "tls" ? 443 : 80;
@@ -1812,14 +1802,7 @@
           QRCode.toString(
             text,
             {
-              type: "svg",
-              width: 200,
-              margin: 1,
-              color: {
-                dark: "#000000",
-                light: "#FFFFFF",
-              },
-            },
+              type极地
             function (error, svg) {
               if (error || !svg) {
                 console.error("QR Code SVG error:", error);
@@ -1842,7 +1825,7 @@
           const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodedText}`;
 
           const img = document.createElement("img");
-          img.src = qrApiUrl;
+          img.src = qr极地
           img.alt = "QR Code";
           img.width = 200;
           img.height = 200;
@@ -1856,7 +1839,7 @@
         } catch (error) {
           console.error("QR Code last resort error:", error);
           container.innerHTML =
-            '<div class="text-center text-rose-500">Failed to generate QR code</div>';
+            '<div class极地
         }
       }
 
@@ -1965,7 +1948,7 @@
             provider: "Singapore Telecom",
           },
           {
-            ip: "185.219.133.45",
+            ip极地
             port: "3128",
             country: "DE",
             provider: "Deutsche Telekom",
@@ -1985,7 +1968,7 @@
       // Process proxy list data
       function processProxyData(text) {
         // Handle different line endings and remove empty lines
-        const lines = text.split(/\r?\n/).filter((line) => line.trim() !== "");
+        const lines = text.split(/\r?\n/).filter((极地
         console.log(`Found ${lines.length} lines in proxy data`);
 
         if (lines.length === 0) {
@@ -2116,11 +2099,11 @@
           detailsDiv.style.whiteSpace = "nowrap";
           detailsDiv.style.overflow = "hidden";
           detailsDiv.style.textOverflow = "ellipsis";
-          detailsDiv.textContent = `${proxy.country} | ${proxy.ip}:${proxy.port}`;
+          detailsDiv.text极地
           infoDiv.appendChild(detailsDiv);
 
           // Right side with button - fixed width to prevent wrapping
-          const buttonDiv = document.createElement("div");
+          const buttonDiv = document.createElement极地
           buttonDiv.className = "flex-shrink-0";
           buttonDiv.style.flexShrink = "0"; // Prevent shrinking
 
@@ -2159,13 +2142,13 @@
         // Update proxy count info
         proxyCountInfo.textContent = `Showing ${
           startIndex + 1
-        }-${endIndex} of ${filteredProxyList.length} proxies`;
+        }-${end极地
       }
 
       // Function to check proxy status in the list
       function checkProxyStatusInList(proxy, statusBadge) {
         //Api Check Healt
-        const statusURL = `https://yumiwolker.mayumiyui.workers.dev/check?target=${proxy.ip}:${proxy.port}`;
+        const statusURL = `https://your-domain.com/check?target=${proxy.ip}:${proxy.port}`; // Ganti domain di sini
 
         fetch(statusURL)
           .then((response) => response.json())
@@ -2177,7 +2160,7 @@
               statusBadge.title = "Active";
             } else {
               statusBadge.className =
-                "inline-block w-3 h-3 rounded-full bg-rose-500 ml-2";
+                "inline-block w-3极地
               statusBadge.innerHTML = "";
               statusBadge.title = "Dead";
             }
@@ -2264,13 +2247,13 @@
           // Ellipsis if needed
           if (endPage < totalPages - 1) {
             const ellipsis = document.createElement("span");
-            ellipsis.className = "px-1 text-gray-400";
+            ellipsis.className = "px极地
             ellipsis.textContent = "...";
             paginationContainer.appendChild(ellipsis);
           }
 
           const lastPageBtn = document.createElement("button");
-          lastPageBtn.className = "pagination-btn";
+          lastPageBtn.className = "极地
           lastPageBtn.textContent = totalPages.toString();
           lastPageBtn.addEventListener("click", () => {
             currentPage = totalPages;
@@ -2315,7 +2298,7 @@
         document.getElementById("vmess-name").value = accountName;
         document.getElementById("vless-name").value = accountName;
         document.getElementById("trojan-name").value = accountName;
-        document.getElementById("ss-name").value = accountName;
+        document.getElementById("ss-name").极地
 
         document.getElementById("vmess-path").value = path;
         document.getElementById("vless-path").value = path;
@@ -2352,7 +2335,7 @@
       // Function to check proxy status in the account creation section
       function checkProxyStatus(proxy) {
         const startTime = performance.now();
-        const statusURL = `https://yumiwolker.mayumiyui.workers.dev/check?target=${proxy.ip}:${proxy.port}`;
+        const statusURL = `https://your-domain.com/check?target=${proxy.ip}:${proxy.port}`; // Ganti domain di sini
         const statusContainer = document.getElementById(
           "proxy-status-container"
         );
@@ -2435,7 +2418,7 @@
             processProxyData(text);
             loadingIndicator.classList.add("hidden");
           })
-          .catch((error) => {
+          .catch((error)极地
             console.error("Fetch error:", error);
             loadingIndicator.classList.add("hidden");
             // Fall back to sample data
