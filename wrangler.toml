@@ -7,8 +7,8 @@ account_id = "4dd02089951b04b51647ab7a49434116"
 workers_dev = true
 
 [[kv_namespaces]]
-binding = "YUMI"
-id = "759096bc5ef34fc3b963b9a5efa695e3"
+binding = "SIREN"
+id = "a33fc4240bcd435e968d857ffc989005"
 
 [build]
 command = "cargo install worker-build && worker-build --release"
